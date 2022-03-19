@@ -1,12 +1,17 @@
-﻿namespace modul4_1302204051;
-
-public class MainClass
+﻿
+namespace MOD4_1302204046_AQL
 {
-    public static void Main(string[] args)
+    public class MainClass
     {
-        // NIM = 1302204051
-        Penjumlahan.JumlahTigaAngka<float>(13, 02, 20);
-        SimpleDataBase<float> objData1 = new SimpleDataBase<float>();
-     
+        public static void Main(string[] args)
+        {
+           
+            Penjumlahan.JumlahTigaAngka<int>(13, 02, 20);
+            SimpleDataBase<int> objData1 = new SimpleDataBase<int>();
+            objData1.AddNewData(13);
+            objData1.AddNewData(02);
+            objData1.AddNewData(20);
+            objData1.PrintAllData();
+        }
     }
 }
